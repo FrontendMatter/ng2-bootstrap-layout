@@ -21,5 +21,14 @@
   "peerDependencies": {
     "bootstrap-layout": "1.0.0-alpha.8",
     "bootstrap-layout-scrollable": "^1.0.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themekit/ng2-bootstrap-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themekit/ng2-bootstrap-layout/issues"
+  },
+  "homepage": "https://github.com/themekit/ng2-bootstrap-layout#readme"
 }
