@@ -38,10 +38,10 @@ var LayoutComponent = (function () {
     ], LayoutComponent.prototype, "sidebarComponents", void 0);
     LayoutComponent = __decorate([
         core_1.Component({
-            selector: 'layout',
-            template: "\n\t\t<div class=\"layout-container\">\n\n\t\t\t<!-- Navbar -->\n\t\t\t<ng-content select=\"navbar\"></ng-content>\n\n\t\t\t<!-- Sidebar -->\n\t\t\t<ng-content select=\"sidebar\"></ng-content>\n\n\t\t\t<!-- Content -->\n\t\t\t<div class=\"layout-content\" data-scrollable>\n\t\t\t\t<div [ngClass]=\"{ 'container': type === 'fixed', 'container-fluid': type === 'fluid' }\">\n\t\t\t\t\t<ng-content></ng-content>\n\t\t\t\t</div>\n\t\t\t</div> <!-- // END Content -->\n\t\t</div>\n\t",
+            selector: 'ng2-bl-layout',
+            template: "\n\t\t<div class=\"layout-container\">\n\n\t\t\t<!-- Navbar -->\n\t\t\t<ng-content select=\"ng2-bl-navbar\"></ng-content>\n\n\t\t\t<!-- Sidebar -->\n\t\t\t<ng-content select=\"ng2-bl-sidebar\"></ng-content>\n\n\t\t\t<!-- Content -->\n\t\t\t<div class=\"layout-content\" ng2-bl-scrollable>\n\t\t\t\t<div [ngClass]=\"{ 'container': type === 'fixed', 'container-fluid': type === 'fluid' }\">\n\t\t\t\t\t<ng-content></ng-content>\n\t\t\t\t</div>\n\t\t\t</div> <!-- // END Content -->\n\t\t</div>\n\t",
             directives: [
-                scrollable_directive_1.ScrollableComponent
+                scrollable_directive_1.ScrollableDirective
             ]
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])

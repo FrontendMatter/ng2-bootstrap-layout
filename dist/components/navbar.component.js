@@ -56,7 +56,7 @@ var NavbarComponent = (function () {
     ], NavbarComponent.prototype, "navbarFixedPosition", void 0);
     NavbarComponent = __decorate([
         core_1.Component({
-            selector: 'navbar',
+            selector: 'ng2-bl-navbar',
             template: "\n\t\t<nav class=\"navbar navbar-full\" [class.navbar-fixed-top]=\"isFixedTop\" [class.navbar-fixed-bottom]=\"isFixedBottom\" [ngClass]=\"navbarClass\" [class.ls-left-sidebar]=\"layout.sidebarComponents.length\">\n\t\t\t<ng-content></ng-content>\n\t\t</nav>\n\t"
         }), 
         __metadata('design:paramtypes', [layout_component_1.LayoutComponent])

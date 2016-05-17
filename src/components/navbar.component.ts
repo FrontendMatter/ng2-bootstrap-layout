@@ -2,7 +2,7 @@ import { Component, Input, AfterViewInit, OnDestroy } from '@angular/core';
 import { LayoutComponent } from './layout.component';
 
 @Component({
-	selector: 'navbar',
+	selector: 'ng2-bl-navbar',
 	template: `
 		<nav class="navbar navbar-full" [class.navbar-fixed-top]="isFixedTop" [class.navbar-fixed-bottom]="isFixedBottom" [ngClass]="navbarClass" [class.ls-left-sidebar]="layout.sidebarComponents.length">
 			<ng-content></ng-content>

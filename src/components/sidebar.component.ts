@@ -1,16 +1,16 @@
 import { Component, Input, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { Sidebar } from 'bootstrap-layout';
-import { ScrollableComponent } from '../directives/scrollable.directive';
+import { ScrollableDirective } from '../directives/scrollable.directive';
 
 @Component({
-	selector: 'sidebar',
+	selector: 'ng2-bl-sidebar',
 	template: `
-		<div class="sidebar sidebar-dark bg-primary" [id]="id" data-scrollable>
+		<div class="sidebar sidebar-dark bg-primary" [id]="id" ng2-bl-scrollable>
 			<ng-content></ng-content>
 		</div>
 	`,
 	directives: [
-		ScrollableComponent
+		ScrollableDirective
 	]
 })
 

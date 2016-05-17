@@ -1,20 +1,20 @@
 import { Component, Input, ContentChildren, QueryList, ElementRef } from '@angular/core';
 import { SidebarComponent } from './sidebar.component';
-import { ScrollableComponent } from '../directives/scrollable.directive';
+import { ScrollableDirective } from '../directives/scrollable.directive';
 
 @Component({
-	selector: 'layout',
+	selector: 'ng2-bl-layout',
 	template: `
 		<div class="layout-container">
 
 			<!-- Navbar -->
-			<ng-content select="navbar"></ng-content>
+			<ng-content select="ng2-bl-navbar"></ng-content>
 
 			<!-- Sidebar -->
-			<ng-content select="sidebar"></ng-content>
+			<ng-content select="ng2-bl-sidebar"></ng-content>
 
 			<!-- Content -->
-			<div class="layout-content" data-scrollable>
+			<div class="layout-content" ng2-bl-scrollable>
 				<div [ngClass]="{ 'container': type === 'fixed', 'container-fluid': type === 'fluid' }">
 					<ng-content></ng-content>
 				</div>
@@ -22,7 +22,7 @@ import { ScrollableComponent } from '../directives/scrollable.directive';
 		</div>
 	`,
 	directives: [
-		ScrollableComponent
+		ScrollableDirective
 	]
 })
 

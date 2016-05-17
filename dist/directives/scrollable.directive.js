@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var bootstrap_layout_scrollable_1 = require('bootstrap-layout-scrollable');
-var ScrollableComponent = (function () {
-    function ScrollableComponent(elementRef) {
+var ScrollableDirective = (function () {
+    function ScrollableDirective(elementRef) {
         this.elementRef = elementRef;
     }
-    ScrollableComponent.prototype.ngAfterViewInit = function () {
+    ScrollableDirective.prototype.ngAfterViewInit = function () {
         bootstrap_layout_scrollable_1.scrollable.init(this.elementRef.nativeElement);
     };
-    ScrollableComponent = __decorate([
+    ScrollableDirective = __decorate([
         core_1.Directive({
-            selector: '[data-scrollable]'
+            selector: '[ng2-bl-scrollable]'
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])
-    ], ScrollableComponent);
-    return ScrollableComponent;
+    ], ScrollableDirective);
+    return ScrollableDirective;
 }());
-exports.ScrollableComponent = ScrollableComponent;
+exports.ScrollableDirective = ScrollableDirective;

@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var bootstrap_layout_1 = require('bootstrap-layout');
-var SidebarToggleComponent = (function () {
-    function SidebarToggleComponent(sidebarToggle) {
+var SidebarToggleDirective = (function () {
+    function SidebarToggleDirective(sidebarToggle) {
         this.sidebarToggle = sidebarToggle;
     }
-    SidebarToggleComponent = __decorate([
+    SidebarToggleDirective = __decorate([
         core_1.Directive({
-            selector: '[sidebar-toggle]',
+            selector: '[ng2-bl-sidebar-toggle]',
             host: {
                 '(click)': 'sidebarToggle._onClick($event)'
             }
         }), 
         __metadata('design:paramtypes', [bootstrap_layout_1.SidebarToggle])
-    ], SidebarToggleComponent);
-    return SidebarToggleComponent;
+    ], SidebarToggleDirective);
+    return SidebarToggleDirective;
 }());
-exports.SidebarToggleComponent = SidebarToggleComponent;
+exports.SidebarToggleDirective = SidebarToggleDirective;

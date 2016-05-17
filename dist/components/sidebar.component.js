@@ -35,10 +35,10 @@ var SidebarComponent = (function () {
     ], SidebarComponent.prototype, "id", void 0);
     SidebarComponent = __decorate([
         core_1.Component({
-            selector: 'sidebar',
-            template: "\n\t\t<div class=\"sidebar sidebar-dark bg-primary\" [id]=\"id\" data-scrollable>\n\t\t\t<ng-content></ng-content>\n\t\t</div>\n\t",
+            selector: 'ng2-bl-sidebar',
+            template: "\n\t\t<div class=\"sidebar sidebar-dark bg-primary\" [id]=\"id\" ng2-bl-scrollable>\n\t\t\t<ng-content></ng-content>\n\t\t</div>\n\t",
             directives: [
-                scrollable_directive_1.ScrollableComponent
+                scrollable_directive_1.ScrollableDirective
             ]
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef, bootstrap_layout_1.Sidebar])
