@@ -5,7 +5,7 @@ import { ScrollableDirective } from '../directives/scrollable.directive';
 @Component({
 	selector: 'ng2-bl-sidebar',
 	template: `
-		<div class="sidebar sidebar-dark bg-primary" [id]="id" ng2-bl-scrollable>
+		<div class="sidebar" [id]="id" [ngClass]="sidebarClass" [attr.data-position]="position" ng2-bl-scrollable>
 			<ng-content></ng-content>
 		</div>
 	`,
@@ -16,6 +16,8 @@ import { ScrollableDirective } from '../directives/scrollable.directive';
 
 export class SidebarComponent implements AfterViewInit, OnDestroy {
 	@Input('sidebar-id') id: String;
+	@Input('sidebar-class') sidebarClass: String = 'sidebar-dark bg-primary';
+	@Input('sidebar-position') position: String = 'left';
 
 	constructor(private elementRef: ElementRef, private sidebar: Sidebar) {}
 
