@@ -4,6 +4,8 @@ export declare class SidebarComponent implements AfterViewInit, OnDestroy {
     private elementRef;
     private sidebar;
     id: String;
+    sidebarClass: String;
+    position: String;
     constructor(elementRef: ElementRef, sidebar: Sidebar);
     selector: string;
     ngAfterViewInit(): void;

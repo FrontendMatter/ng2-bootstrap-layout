@@ -15,6 +15,8 @@ var SidebarComponent = (function () {
     function SidebarComponent(elementRef, sidebar) {
         this.elementRef = elementRef;
         this.sidebar = sidebar;
+        this.sidebarClass = 'sidebar-dark bg-primary';
+        this.position = 'left';
     }
     Object.defineProperty(SidebarComponent.prototype, "selector", {
         get: function () {
@@ -33,10 +35,18 @@ var SidebarComponent = (function () {
         core_1.Input('sidebar-id'), 
         __metadata('design:type', String)
     ], SidebarComponent.prototype, "id", void 0);
+    __decorate([
+        core_1.Input('sidebar-class'), 
+        __metadata('design:type', String)
+    ], SidebarComponent.prototype, "sidebarClass", void 0);
+    __decorate([
+        core_1.Input('sidebar-position'), 
+        __metadata('design:type', String)
+    ], SidebarComponent.prototype, "position", void 0);
     SidebarComponent = __decorate([
         core_1.Component({
             selector: 'ng2-bl-sidebar',
-            template: "\n\t\t<div class=\"sidebar sidebar-dark bg-primary\" [id]=\"id\" ng2-bl-scrollable>\n\t\t\t<ng-content></ng-content>\n\t\t</div>\n\t",
+            template: "\n\t\t<div class=\"sidebar\" [id]=\"id\" [ngClass]=\"sidebarClass\" [attr.data-position]=\"position\" ng2-bl-scrollable>\n\t\t\t<ng-content></ng-content>\n\t\t</div>\n\t",
             directives: [
                 scrollable_directive_1.ScrollableDirective
             ]
